@@ -1,0 +1,23 @@
+{
+  "name": "generic scaffolding",
+  "version": "1.0.0",
+  "description": "simple boilerplate: babel, express",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "chalk": "^2.4.2",
+    "rollup": "^1.11.3"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "run": "node ./index.js",
+    "test": "test"
+  },
+  "author": "nedda",
+  "license": "ISC"
+}
