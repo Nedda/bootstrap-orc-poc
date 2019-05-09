@@ -1,10 +1,11 @@
 {
-  "name": "generic scaffolding",
+  "name": "",
   "version": "1.0.0",
   "description": "simple boilerplate: babel, express",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "parcel-bundler": "^1.12.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -14,8 +15,8 @@
     "rollup": "^1.11.3"
   },
   "scripts": {
-    "build": "babel src -d lib",
-    "run": "node ./index.js",
+    "build": "babel src -d lib --copy-files",
+    "start": "parcel src/index.html",
     "test": "test"
   },
   "author": "nedda",
